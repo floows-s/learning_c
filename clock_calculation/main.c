@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+/* NO AI HAS BEEN USED TO MAKE THIS CODE. MADE BY HUMANS. */
+
 /*
     In this program I demonstrate a clock wrap around using the modulo. 
     By using modulo i can ensure the result stays between 0 & 23.

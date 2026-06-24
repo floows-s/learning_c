@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* NO AI HAS BEEN USED TO MAKE THIS CODE. MADE BY HUMANS. */
+
 void print_arr(size_t size, int arr[size]);
 void merge_sort(size_t size_a, int a[size_a], int* output);
 void merge(size_t size_a, int a[size_a], size_t size_b, int b[size_b], int* output);
