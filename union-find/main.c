@@ -28,7 +28,7 @@
 
     find_compress: Can you implement a find_compress function that changes all parent entries to the root that has been found?
 
-    Can you implement a Union function that, for two given elements, combines their trees into one? Use FindCompress for one side and FindReplace for the other.
+    Union: Can you implement a Union function that, for two given elements, combines their trees into one? Use FindCompress for one side and FindReplace for the other.
 */
 
 size_t Union(size_t size, size_t parent[size], size_t target_1, size_t target_2);
