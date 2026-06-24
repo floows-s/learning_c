@@ -9,7 +9,8 @@
                 "-g",
                 "-fstack-protector-all",
                 "-std=c2x",
-                "${file}",
+                "${fileDirname}/*.c",
+                "${fileDirname}/tests/*.c",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

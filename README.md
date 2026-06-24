@@ -1,8 +1,9 @@
 # Learning C
-This repository is a collection of small programs, algorithms and experiments created as I learn C.
-C23 to be clear.
+This repository is a collection of small programs, algorithms and experiments created as I learn C23.
 Each folder is a standalone piece of code where I have made something.
 This allows me to share what I have learned so far. 
+
+If you see anything that you think i should do differently than let me know. I am here to learn.
 
 At the time of writing, I'm learning C by reading *Jens Gustedt - Modern C, Third Edition*.
 
