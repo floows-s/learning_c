@@ -139,7 +139,7 @@ void find_replace(size_t size, size_t parent[size], size_t entry_point, size_t v
 size_t find_root(size_t parent_size, const size_t parent[parent_size], size_t target){
     if(target > parent_size - 1){
         printf("Error: target out of bound");
-        abort(); // Dont know how to propely do errors in C yet
+        abort(); // Dont know how to propely do errors in C yet, Note from the future: Abort is absolutly not the way to exit a program... 
     }
 
     size_t target_parent = parent[target];

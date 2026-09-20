@@ -10,11 +10,11 @@ ULL fib(int n);
 void print_cache(size_t size, ULL cache[size]);
 
 int main(){
-    int n = 93;
+    int n = 43;
 
-    // ULL result = fib_cache(n);
+    ULL result = fib_cache(n);
 
-    ULL result = fib(n);
+    // ULL result = fib(n);
 
     printf("%llu\n", result);
 
