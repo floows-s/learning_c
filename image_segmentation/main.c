@@ -53,8 +53,29 @@
 
 #include <stdio.h>
 
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
+#define STB_IMAGE_WRITE_IMPLEMENTATION
+#include "stb_image_write.h"
+
 
 int main(){
+    const char *file_name = "marco.png";
+    int width = 0, height = 0, comp = 0;
+
+    stbi_info(file_name, &width, &height, &comp);
+
+    unsigned char *img = stbi_load(file_name, &width, &height, &comp, 1);
+
+
+    if(img == nullptr){
+        const char *failure_reason = stbi_failure_reason();
+        printf("Failed to load image. Reason: %s\n", failure_reason);
+    }
+
+    int result = stbi_write_png("test_image_grey_scale.png", width, height, 1, img, width); // stride_bytes = bytes per row, which in greyscale is just the width (1 pixel is 1 byte * width which is amount of pixels so 1*width = width)
+    printf("Result: %d\n", result);
+
 
     return 0;
 }
